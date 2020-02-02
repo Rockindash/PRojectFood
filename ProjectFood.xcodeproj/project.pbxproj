@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815F9F4223E6182500EEFC94 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F9F4123E6182500EEFC94 /* ItemViewController.swift */; };
+		818FBBAA23E68A6E009A6B40 /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818FBBA923E68A6E009A6B40 /* APIResponses.swift */; };
+		818FBBB323E6A8B1009A6B40 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818FBBB223E6A8B1009A6B40 /* RecipeCell.swift */; };
+		818FBBB523E6A8B5009A6B40 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818FBBB423E6A8B5009A6B40 /* RecipesViewController.swift */; };
+		818FBBB823E6A956009A6B40 /* networkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818FBBB723E6A956009A6B40 /* networkManager.swift */; };
 		A629775823E5F475007A507E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A629775723E5F475007A507E /* AppDelegate.swift */; };
 		A629775A23E5F475007A507E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A629775923E5F475007A507E /* art.scnassets */; };
 		A629775C23E5F475007A507E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A629775B23E5F475007A507E /* ViewController.swift */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		815F9F4123E6182500EEFC94 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		818FBBA923E68A6E009A6B40 /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
+		818FBBB223E6A8B1009A6B40 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		818FBBB423E6A8B5009A6B40 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		818FBBB723E6A956009A6B40 /* networkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkManager.swift; sourceTree = "<group>"; };
 		A629775423E5F475007A507E /* ProjectFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A629775723E5F475007A507E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A629775923E5F475007A507E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -76,6 +86,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		818FBBB123E6A8A7009A6B40 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				818FBBB223E6A8B1009A6B40 /* RecipeCell.swift */,
+				818FBBB423E6A8B5009A6B40 /* RecipesViewController.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		818FBBB623E6A943009A6B40 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				818FBBB723E6A956009A6B40 /* networkManager.swift */,
+			);
+			name = Managers;
+			path = Manager/Managers;
+			sourceTree = "<group>";
+		};
+		818FBBB923E6AD32009A6B40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				818FBBA923E68A6E009A6B40 /* APIResponses.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A629774B23E5F475007A507E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +135,9 @@
 		A629775623E5F475007A507E /* ProjectFood */ = {
 			isa = PBXGroup;
 			children = (
+				818FBBB923E6AD32009A6B40 /* Models */,
+				818FBBB623E6A943009A6B40 /* Managers */,
+				818FBBB123E6A8A7009A6B40 /* Recipes */,
 				A629775723E5F475007A507E /* AppDelegate.swift */,
 				A629775923E5F475007A507E /* art.scnassets */,
 				A629775B23E5F475007A507E /* ViewController.swift */,
@@ -106,6 +145,7 @@
 				A629776023E5F476007A507E /* Assets.xcassets */,
 				A629776223E5F476007A507E /* LaunchScreen.storyboard */,
 				A629776523E5F476007A507E /* Info.plist */,
+				815F9F4123E6182500EEFC94 /* ItemViewController.swift */,
 			);
 			path = ProjectFood;
 			sourceTree = "<group>";
@@ -260,8 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818FBBB323E6A8B1009A6B40 /* RecipeCell.swift in Sources */,
+				818FBBAA23E68A6E009A6B40 /* APIResponses.swift in Sources */,
 				A629775C23E5F475007A507E /* ViewController.swift in Sources */,
 				A629775823E5F475007A507E /* AppDelegate.swift in Sources */,
+				818FBBB523E6A8B5009A6B40 /* RecipesViewController.swift in Sources */,
+				815F9F4223E6182500EEFC94 /* ItemViewController.swift in Sources */,
+				818FBBB823E6A956009A6B40 /* networkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,13 +480,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LNG8PFABR7;
+				DEVELOPMENT_TEAM = 85P83679XU;
 				INFOPLIST_FILE = ProjectFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Amol-Kumar.ProjectFood";
+				PRODUCT_BUNDLE_IDENTIFIER = "Amol-Kumar.ProjectFood.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,13 +498,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LNG8PFABR7;
+				DEVELOPMENT_TEAM = 85P83679XU;
 				INFOPLIST_FILE = ProjectFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Amol-Kumar.ProjectFood";
+				PRODUCT_BUNDLE_IDENTIFIER = "Amol-Kumar.ProjectFood.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
